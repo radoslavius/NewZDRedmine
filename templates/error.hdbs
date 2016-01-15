@@ -1,6 +1,6 @@
 <div>
-There was an error with the Redmine Integration. The error message was:
+    {{error}}
 </div>
 <div>
-{{error}}
+    <a class="btn back_button">{{t "btn.back"}}</a>
 </div>

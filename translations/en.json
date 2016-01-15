@@ -1,9 +1,19 @@
 {
   "app": {
-    "description":  "This is a template to use",
-    "name":         "Template App"
+    "description":  "Create ticket to redmine from zendesk",
+    "name":         "Redmine",
+    "parameters": {
+      "roleId": {"label":"Role id for assignee list", "helpText":""},
+      "customFields": {"label":"Custom fields in JSON format", "helpText":"e.g. [{\"id\":7,\"value\":\"Zendesk\"}]"},
+      "customFieldsIssueId": {"label":"Field id for push zendesk id to custom fields"}
+    }
   },
   "issue":{
+    "list": "Issue List",
     "posted": "Issue created!"
+  },
+  "btn":{
+    "back": "Back",
+    "submit": "Submit"
   }
 }

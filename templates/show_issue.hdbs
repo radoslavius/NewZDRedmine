@@ -1,29 +1,41 @@
 <div>
-<p class="caption subject">Subject:</p>
-<p>{{issue.subject}}</p>
-<br />
-<p class="caption">Project Name:</p>
-<p>{{issue.project.name}}</p>
-<br />
-<p class="caption">Tracker/Status/Priority:</p>
-<p>
-  <span class="label">{{issue.tracker.name}}</span> /
-  <span class="label">{{issue.status.name}}</span> /
-  <span class="label">{{issue.priority.name}}</span>
-</p>
-<br />
-<p class="caption">Author:</p>
-<p>{{issue.author.name}}</p>
-<br />
-<p class="caption">Description</p>
-<p>{{issue.description}}</p>
-<br />
-<p class="caption">{{issue.done_ratio}}% Done
-<div class="progress">
-  <div class="bar" style="width: {{issue.done_ratio}}%;"></div>
-</div></p>
-<br />
-<p><span class="caption">Time Spent:</span> {{issue.spent_hours}}</p>
-<br />
-<a class="back_button">Back</a> - <a href="{{url}}" target="_new">Open In Redmine <i class="icon-share-alt"> </i></a>
+    <p class="caption subject">Subject:</p>
+    <p>{{issue.subject}}</p>
+    <br/>
+    <p class="caption">Project Name:</p>
+    <p>{{issue.project.name}}</p>
+    <br/>
+    <table class="table table-condensed">
+        <thead>
+        <tr>
+            <th>Tracker</th>
+            <th>Status</th>
+            <th>Priority</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td><span class="label">{{issue.tracker.name}}</span></td>
+            <td><span class="label">{{issue.status.name}}</span></td>
+            <td><span class="label">{{issue.priority.name}}</span></td>
+        </tr>
+        </tbody>
+    </table>
+    <br/>
+    <p class="caption">Author:</p>
+    <p>{{issue.author.name}}</p>
+    <br/>
+    <p class="caption">Description</p>
+    <p>{{issue.description}}</p>
+    <br/>
+    <p class="caption">{{issue.done_ratio}}% Done
+    <div class="progress">
+        <div class="bar" style="width: {{issue.done_ratio}}%;"></div>
+    </div>
+    </p>
+    <br/>
+    <p><span class="caption">Time Spent:</span> {{issue.spent_hours}}</p>
+    <br/>
+    <a class="btn back_button">{{t "btn.back"}}</a>
+    <a href="{{url}}" target="_new" class="btn">Open In Redmine <i class="icon-share-alt"> </i></a>
 </div>

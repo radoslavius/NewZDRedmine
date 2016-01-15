@@ -1,25 +1,37 @@
 {
   "author": {
-    "name" :"Adam Panzer",
+    "name": "Adam Panzer",
     "email": "apanzer@zendesk.com"
   },
-    "frameworkVersion": "1.0",
-    "location":"ticket_sidebar",
-    "defaultLocale": "en",
-    "private": true,
-    "singleInstall": true,
-    "parameters":
-     [
-      {
-        "name":"redmine_url",
-        "type":"url",
-        "required":true
-      },
-      {
-        "name":"apiKey",
-        "type":"text",
-        "required":true,
-        "secure":true
-      }
-     ]
+  "frameworkVersion": "1.0",
+  "location": "ticket_sidebar",
+  "defaultLocale": "en",
+  "private": true,
+  "singleInstall": true,
+  "parameters": [
+    {
+      "name": "redmine_url",
+      "type": "url",
+      "required": true
+    },
+    {
+      "name": "apiKey",
+      "type": "text",
+      "required": true,
+      "secure": true
+    },
+    {
+      "name": "roleId",
+      "type": "number",
+      "required": true
+    },
+    {
+      "name": "customFields",
+      "type": "text"
+    },
+    {
+      "name": "customFieldsIssueId",
+      "type": "number"
+    }
+  ]
 }

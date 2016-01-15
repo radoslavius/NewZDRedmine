@@ -1,4 +1,4 @@
-<p><h3> Issue List</h3></p>
+<p><h4>{{t "issue.list"}}</h4></p>
 {{#each issue}}
-<a class="issue id_{{id}} btn btn-mini">Issue {{id}}</a>
+<a class="issue id_{{id}} btn btn-mini">#{{id}}</a>
 {{/each}}

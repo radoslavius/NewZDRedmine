@@ -1,5 +1,5 @@
 <div id="projectList_div">
-    <h4>Current Projects:</h4>
+    <h4>{{t "issue.selectProject"}}:</h4>
     <ul>
         {{#each project_data.projects}}
             <li>

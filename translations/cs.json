@@ -1,6 +1,6 @@
 {
   "app": {
-    "description":  "Create ticket to redmine from zendesk",
+    "description":  "Vytvoří požadavek do Redmine z Zendesku",
     "name":         "Redmine",
     "parameters": {
       "roleId": {"label":"Role id for assignee list", "helpText":""},
@@ -9,16 +9,16 @@
     }
   },
   "issue":{
-    "list": "Issue List",
-    "posted": "Issue created!",
-    "subject": "Subject",
-    "tracker": "Tracker",
-    "selectProject": "Select project",
-    "assigned_to": "Assigned to",
-    "comments": "Additional Comments"
+    "list": "Seznam požadavků",
+    "posted": "Požadavek byl vytvořen",
+    "subject": "Předmět",
+    "tracker": "Fronta",
+    "selectProject": "Vyber projekt",
+    "assigned_to": "Přiřazeno",
+    "comments": "Dodatečný komentář"
   },
   "btn":{
-    "back": "Back",
-    "submit": "Submit"
+    "back": "Zpět",
+    "submit": "Odeslat"
   }
 }

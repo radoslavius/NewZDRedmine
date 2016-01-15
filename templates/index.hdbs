@@ -1,15 +1,15 @@
 <div id="newIssue">
-    <p>Subject: </p>
+    <p>{{t "issue.subject"}}: </p>
     <p><input type="text" id="rm_subject"></p>
 
-    <p>Tracker: </p>
+    <p>{{t "issue.tracker"}}: </p>
     <p><select id="rm_tracker">
         {{#each track.trackers}}
             <option value="{{this.id}}">{{this.name}}</option>
         {{/each}}
     </select></p>
 
-    <p>{{t "assigned_to"}}: </p>
+    <p>{{t "issue.assigned_to"}}: </p>
     <p><select id="rm_assigned">
         {{#each assign}}
             {{#if this.user}}
@@ -21,7 +21,7 @@
         {{/each}}
     </select></p>
 
-    <p>Additional Comments: </p>
+    <p>{{t "comments"}}: </p>
     <p><textarea id="rm_note"/></p>
     <p>
         <a class="btn" id="submitToRedmine">{{t "btn.submit"}}</a>
